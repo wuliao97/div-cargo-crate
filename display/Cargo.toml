@@ -1,0 +1,10 @@
+[package]
+name = "display"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[dev-dependencies]
+calc = { workspace = true }
+util = { workspace = true }

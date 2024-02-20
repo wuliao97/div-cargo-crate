@@ -1,0 +1,21 @@
+[workspace]
+members = [
+    ".",
+    "calc", 
+    "display",
+]
+
+
+[package]
+name = "util"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+calc = { workspace = true }
+display = { workspace = true }
+
+[workspace.dependencies]
+calc = { version = "=0.1", path = "calc" }
+display = { version = "=0.1", path = "display" }
+util = {version = "=0.1", path = "." }
